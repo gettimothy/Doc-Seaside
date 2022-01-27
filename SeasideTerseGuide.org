@@ -1,0 +1,60 @@
+*  SeasideTerseGuide
+** Introduction 
+
+#+BEGIN_EXAMPLE
+Doits for Seaside 
+
+
+#+END_EXAMPLE
+
+
+** Todo
+#+BEGIN_EXAMPLE
+
+WAJsonCanvas class builder.
+
+
+#+END_EXAMPLE
+
+** Builder
+
+
+#+BEGIN_EXAMPLE
+
+This is a convenience class which provides a result of a rendering operation as a string. It is expected to be used like this:
+
+WAHtmlCanvas builder render: [ :html |
+	html anchor
+		url: 'htttp://www.seaside.st';
+		with: 'Seaside Homepage' ]
+ '<a href="htttp://www.seaside.st">Seaside Homepage</a>' 
+See WABuilderCanvasTest for more examples.
+
+
+#+END_EXAMPLE
+
+
+** RequestHandlerBrowser
+
+#+BEGIN_EXAMPLE
+
+I am the Seaside Request Handler Browser, a user interface to Seaside's 
+request handler tree and configuration for each handler.
+
+Start me with
+
+	WARequestHandlerBrowser open
+
+
+#+END_EXAMPLE
+
+
+** Bibliography
+
+#+BEGIN_EXAMPLE
+  https://github.com/gettimothy/Doc-Seaside
+
+#+END_EXAMPLE
+
+
+
