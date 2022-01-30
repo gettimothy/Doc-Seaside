@@ -16,22 +16,21 @@ WAJsonCanvas class builder.
 
 #+END_EXAMPLE
 
-** Builder
 
+** Scratch Pad
 
 #+BEGIN_EXAMPLE
-
-This is a convenience class which provides a result of a rendering operation as a string. It is expected to be used like this:
-
-WAHtmlCanvas builder render: [ :html |
-	html anchor
-		url: 'htttp://www.seaside.st';
-		with: 'Seaside Homepage' ]
- '<a href="htttp://www.seaside.st">Seaside Homepage</a>' 
-See WABuilderCanvasTest for more examples.
-
-
+Transcript clear.
+(WARequestContext
+	request: WARequest new
+	response: WABufferedResponse new
+	codec: GRNullCodec new)
+		push: #()
+		during: [Transcript show:'this ends up in DynamicVariable > value: during:';cr].   
+	
 #+END_EXAMPLE
+
+
 
 
 ** RequestHandlerBrowser
